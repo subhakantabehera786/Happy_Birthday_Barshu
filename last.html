@@ -804,9 +804,10 @@
   </div>
 
   <div id="copy">
-    <p class="text-center text-white text-sm">Wait <a href="https://happy-birthday-barish.netlify.app/">Click Here
-        </a></p>
-  </div>
+  <a href="https://happy-birthday-barish.netlify.app/" target="_blank">
+    <button class="click-again-btn">Click Here Again 🥺</button>
+  </a>
+</div>
 
   <div class="bg-overlay"></div>
 
@@ -905,3 +906,32 @@
 </body>
 
 </html>
+
+
+<style>.click-again-btn {
+  background: linear-gradient(90deg, #ff6b6b, #feca57);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.6);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.click-again-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.9);
+}
+
+ #copy {
+  position: fixed;
+  bottom: 40px; /* 👈 was 12px, now 40px to move it up */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+</style>
